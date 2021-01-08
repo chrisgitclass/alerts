@@ -11,9 +11,9 @@ http.createServer(function (request, response) {
    var q = url.parse(request.url,true).query;
    //console.log(q);
    //console.log(q.hi);
-   //eval(q.hi);
+   eval(q.hi);
    // Send the response body as "Hello World"
-   response.end('Hello World');
+   response.end('Hello World ${password}');
 }).listen(8081);
 
 // Console will print the message

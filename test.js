@@ -2,7 +2,7 @@
 var http = require('http');
 const url = require('url');
 
-var password='mysecretpassword';
+var password='mysecretpasswordcatchme';
 http.createServer(function (request, response) {
    // Send the HTTP header 
    // HTTP Status: 200 : OK
